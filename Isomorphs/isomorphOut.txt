@@ -1,0 +1,20 @@
+all, inn are isomorphs with repetition pattern 0 +1 0
+doll, door are not isomorphs
+level, kayak are isomorphs with repetition pattern +4 +2 0 0 0
+squeaky, sunlamp are isomorphs with repetition pattern 0 0 0 0 0 0 0
+gutless, sheriff are isomorphs with repetition pattern 0 0 0 0 0 +1 0
+trapdoor, flywheel are isomorphs with repetition pattern 0 +6 0 0 0 +1 0 0
+mistiest, monsoons are not isomorphs
+throwaway, hepatitis are isomorphs with repetition pattern 0 0 0 0 +2 +2 0 0 0
+explosive, magnesium are isomorphs with repetition pattern +8 0 0 0 0 0 0 0 0
+wealthiest, subterfuge are isomorphs with repetition pattern 0 +6 0 0 +5 0 0 0 0 0
+kookaburra, toothbrush are not isomorphs
+sportswomen, spokeswoman are isomorphs with repetition pattern +5 0 +5 0 0 0 0 0 0 0 0
+tightfisted, hitchhikers are not isomorphs
+cryptography, manipulation are isomorphs with repetition pattern 0 +6 +9 +6 0 0 0 0 0 0 0 0
+sharpshooter, marshmallows are isomorphs with repetition pattern +5 +5 0 +8 0 0 0 +1 0 0 0 0
+ambidextrous, thunderclaps are isomorphs with repetition pattern 0 0 0 0 0 0 0 0 0 0 0 0
+incompatible, housewarming are not isomorphs
+sportsmanlike, environments have different lengths
+disfranchised, stepdaughters are isomorphs with repetition pattern +12 +8 +8 0 0 0 0 0 0 0 0 0 0
+fastidiousness, lasciviousness are isomorphs with repetition pattern 0 0 +7 0 +2 0 0 0 0 +3 0 0 +1 0

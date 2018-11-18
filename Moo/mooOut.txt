@@ -1,0 +1,15 @@
+Initial candidate list size = 5040.
+Guess 1 5012 gives B    Candidates remaining: 480
+Guess 2 6034 gives C    Candidates remaining: 126
+Guess 3 5976 gives CC   Candidates remaining: 22
+Guess 4 8617 gives CC   Candidates remaining: 1
+Solution: 9862
+
+Initial candidate list size = 5040.
+Guess 1 5012 gives CC   Candidates remaining: 1260
+Guess 2 3104 gives B    Candidates remaining: 128
+Guess 3 6524 gives CC   Candidates remaining: 30
+Guess 4 3275 gives C    Candidates remaining: 10
+Guess 5 2609 gives BBB  Candidates remaining: 1
+Solution: 2608
+
