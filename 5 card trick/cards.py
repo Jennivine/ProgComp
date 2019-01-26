@@ -98,13 +98,20 @@ def solve(l):
         raise "error: list length not expected"
 
 def main():
+    f = open("task3.dat")
+    N = int(f.readline().strip())
+    
+    for i in xrange(N):
+        result = solve(f.readline().strip().split())
+        print result
 
+def test():    
     TEST_DATA = [ ("7D AD 10C 5H",    "10D"),
                   ("KC 4S QH KD",     "2C"),
                   ("3D 3C 8H 4H 9S",  "4H 3C 3D 9S"),
                   ("4D 3S QS 9D JD",  "JD 9D QS 3S"),
                   ("10C JS 3H AD 4H", "3H JS 10C AD") ]
-
+        
     for test_val, answer in TEST_DATA:
         result = solve(test_val.split())
         print("%-20s %-20s %-10s Ans: %s" % (test_val, result, result == answer, answer))
