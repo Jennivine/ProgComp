@@ -1,0 +1,3 @@
+40 100
+.RRRR.RR..RR....RR..R.....R.R.RR......R....RR....RR..R..RR.RR..R....RR.R.....R.R.
+..B.....B.BBB.BBB.B......B..B...B.B..BB.........B....B.B.BBB..B.B.B.BB.BBB...BB.B
