@@ -75,9 +75,13 @@ def printBlock(choc):
     print ""
 
 def isLosing(choc):
+    n = len(choc)
     losingPos = {(2,2,1),(3,2),(4,2,2),(3,3,1,1)}
     
-    if len(choc) == choc[0] or tuple(choc) in losingPos:
+    if n == choc[0] and all(choc[i] == 1 for i in range(1, n)):
+        return True
+
+    if tuple(choc) in losingPos:
         return True
 
     return False
@@ -86,10 +90,10 @@ def winningMove(choc):
     n = len(choc)
 
     # special cases
-    if choc == [4,4,4]:
-        return [1,2]
+    if len(choc) == 3 and (choc[0] == 4 and choc[1] > 2 and choc[2] >= 2):
+        return [1,2]           
 
-    if choc == [3,3,3,3]:
+    if len(choc) == 4 and (choc[0] == 3 and choc[1] == 3 and choc[2] > 1 and choc[3] >= 1):
         return [2,1]
 
     if choc == [2,2,2]:
@@ -98,20 +102,22 @@ def winningMove(choc):
     if choc == [3,3]:
         return [1,2]
 
+    # TODO: few more cases I need to consider
+
     # more general cases, but still hardcoded because HA
     if n > 2 and choc[0:2] == [3,2]:
         return [2,0]
-    if n == 2 and (choc[0]>3 and choc[1] == 2):
+    if n == 2 and (choc[0] > 3 and choc[1] == 2):
         return [0,3]
 
     if n > 3 and choc[0:3] == [2,2,1]:
         return [3,0]
-    if n == 3 and (choc[0] > 2 and choc[1] > 2 and choc[2] == 1):
+    if n == 3 and (choc[0] > 2 and choc[1] >= 2 and choc[2] == 1):
         return [0,2]
 
     if n > 4 and choc[0:4] == [3,3,1,1]:
         return [4,0]
-    if n == 4 and (choc[0] > 3 and choc[1] > 3 and choc[2] == 1 and choc[3] == 1):
+    if n == 4 and (choc[0] > 3 and choc[1] >= 3 and choc[2] == 1 and choc[3] == 1):
         return [0,3]
 
     if n > 3 and choc[0:3] == [4,2,2]:
@@ -124,7 +130,6 @@ def winningMove(choc):
         return [1,1]
     
     return None
-
 
 block = makeChoc(r,c)
 printBlock(block)
