@@ -6,7 +6,7 @@ with open("lifeIn.txt", "r") as I:
 
 def reduceNum (num):
     while num >= 10:
-        if num % 11 == 0 and num < 100:
+        if num % 11 == 0 and num < 40:
             break
         else:
             num = sum(map(int,list(str(num))))

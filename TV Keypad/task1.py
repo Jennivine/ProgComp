@@ -1,7 +1,3 @@
-
-
-
-
 def checkWord(word):
     word = word.lower()
     for i in range(len(word)-1):
